@@ -1,13 +1,12 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   ol:
     specifier: ^9.2.4
     version: 9.2.4
+  projzh:
+    specifier: ^1.0.0
+    version: 1.0.0
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -2406,6 +2405,10 @@ packages:
     hasBin: true
     dev: true
 
+  /projzh@1.0.0:
+    resolution: {integrity: sha512-J7tKi6jnyq+Z2y29zmh/U63rVOl6wPWKaGM7lrX8cAq+o7w2bRj1VsYucsn2E5snfh6sV5/f7DHZJkw1e9MrDQ==}
+    dev: false
+
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
@@ -3019,3 +3022,7 @@ packages:
   /zstddec@0.1.0:
     resolution: {integrity: sha512-w2NTI8+3l3eeltKAdK8QpiLo/flRAr2p8AGeakfMZOXBxOg9HIu4LVDxBi81sYgVhFhdJjv1OrB5ssI8uFPoLg==}
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
