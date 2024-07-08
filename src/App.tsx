@@ -1,35 +1,12 @@
-import './app.css';
-import { useRef, useEffect } from 'react';
-import createLayer from './utils/baiduLayer';
-import Map from 'ol/Map';
-import View from 'ol/View';
+import MapContainer from '@/pages/map/container';
 
 function App() {
-  const mapRef = useRef<HTMLDivElement>(null);
-  const map = useRef<Map>();
-
-  useEffect(() => {
-    if (mapRef.current) {
-      map.current = new Map({
-        target: mapRef.current,
-        layers: [
-          createLayer(
-            // 'http://online{n}.map.bdimg.com/tile/?qt=vtile&x={x}&y={y}&z={z}&styles=pl&scaler=1&udt=20190718',
-            'http://maponline3.bdimg.com/tile/?qt=vtile&x={x}&y={y}&z={z}&styles=pl&scaler=2&udt=20240705',
-          ),
-        ],
-        view: new View({
-          center: [0, 0],
-          zoom: 2,
-        }),
-      });
-    }
-    return () => {
-      map.current!.setTarget(undefined);
-    };
-  }, []);
-
-  return <div className="low-map" ref={mapRef}></div>;
+  return (
+    <div className="h-full relative">
+      <div></div>
+      <MapContainer />
+    </div>
+  );
 }
 
 export default App;
