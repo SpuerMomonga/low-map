@@ -12,9 +12,18 @@
     "plugin:react-hooks/recommended",
     "plugin:react/jsx-runtime"
   ],
-  "ignorePatterns": ["dist", ".eslintrc"],
+  "ignorePatterns": [
+    "dist",
+    ".eslintrc"
+  ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["prettier", "react", "react-hooks", "@typescript-eslint", "react-refresh"],
+  "plugins": [
+    "prettier",
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "react-refresh"
+  ],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -25,10 +34,13 @@
         "semi": true,
         "bracketSpacing": true,
         "jsxBracketSameLine": true,
-        "trailingComma": "all",
+        "trailingComma": "none",
         "endOfLine": "auto"
       }
     ],
-    "quotes": ["error", "single"]
+    "quotes": [
+      "error",
+      "single"
+    ]
   }
 }
