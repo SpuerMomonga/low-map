@@ -8,7 +8,7 @@ const bd09Extent = [-20037726.37, -12474104.17, 20037726.37, 12474104.17];
 const baiduMercator = new Projection({
   code: 'baidu',
   extent: bd09Extent,
-  units: 'm',
+  units: 'm'
 });
 addProjection(baiduMercator);
 addCoordinateTransforms('EPSG:4326', baiduMercator, projzh.ll2bmerc, projzh.bmerc2ll);
@@ -41,10 +41,10 @@ export default function (url: string) {
       },
       tileGrid: new TileGrid({
         resolutions: bmercResolutions,
-        origin: [0, 0],
+        origin: [0, 0]
       }),
       tilePixelRatio: 2,
-      tileSize: [512, 512],
-    }),
+      tileSize: [512, 512]
+    })
   });
 }
